@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <style>
+        body{
+        margin-top: 20%;
+        background-color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        }
+      .bulb-container {
+        height: 150px;
+        width: 90px;
+        border-radius: 500% 500% 0% 0%;
+        /* border: #181818; */
+      }
+      .bulb {
+        background-color: yellow;
+        /* box-shadow: 0 0 200px rgba(255, 255, 255, 0.3); */
+        box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), 0 0 30px rgba(255, 255, 0, 0.5), 0 0 40px
+        rgba(255, 255,0, 0.3);
+      }
+      .box{
+        border: 3px solid rgb(65, 35, 35);
+        width: 120px;
+        height: 30px;
+        background-color: rgb(201, 168, 127);
+        border-radius: 20px;
+      }
+      .box2{
+        border: 4px solid rgb(65, 35, 35);
+        width: 70px;
+        height: 30px;
+        background-color: rgb(201, 168, 127);
+        border-radius: 0% 0% 50% 50%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- Q#1  -->
+    <!-- <button onclick="console.log('I am A')">Click</button>
+    <button onclick="console.log('I am B')">Click</button>
+    <button onclick="console.log('I am C')">Click</button> -->
+    <!-- Q#2  -->
+    <!-- <h1>Bookmark The Websites</h1> -->
+    <!-- <a href="https://google.com"><button>Google</button></a>
+    <a href="https://instagram.com"><button>Instagram</button></a>
+    <a href="https://fb.com"><button>Facebook</button></a> -->
+    <!-- copied this for Q#3  -->
+    <!-- <button id="btn">Google</button> -->
+    <div id="bulb" class="bulb bulb-container">
+      <!-- i am here -->
+    </div>
+    <div class="box">
+    </div>
+    <div class="box2">
+    </div>
+    <script>
+      // Q#3
+    //   document.getElementById("btn").addEventListener("click", function () {
+    //     window.location = "https://google.com";
+    //   });
+
+      // Q#5
+      setInterval(async function () {
+        document.querySelector("#bulb").classList.toggle("bulb");
+      }, 300);
+    </script>
+  </body>
+</html>
